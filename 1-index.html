@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qalir</title>
+<meta name="description" content="Qalir is a personal assistant that remembers what matters to you and gets things done. Invite only, on Telegram.">
+<style>
+  :root{
+    --text:#1a1a1a;
+    --muted:#4a4a48;
+    --bg:#ffffff;
+    --rule:#e8e6e1;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:Georgia,'Times New Roman',Times,serif;
+    background:var(--bg);
+    color:var(--text);
+    font-size:19px;
+    line-height:1.5;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:640px;margin:0 auto;padding:0 28px;width:100%;}
+
+  nav{
+    display:flex;align-items:flex-start;justify-content:space-between;
+    padding:26px 28px 0;
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+  }
+  .wordmark{
+    font-family:Georgia,'Times New Roman',Times,serif;
+    font-size:24px;font-weight:700;color:var(--text);text-decoration:none;letter-spacing:.4px;
+  }
+  .nav-links{font-size:13px;padding-top:7px;}
+  .nav-links a{color:var(--text);text-decoration:none;margin-left:20px;}
+  .nav-links a:hover{text-decoration:underline;}
+
+  main{flex:1;}
+  section{padding:44px 0 0;}
+  p{margin:0 0 22px;}
+  h2{font-size:22px;font-weight:700;margin:0 0 18px;}
+  a.cta{color:var(--text);text-decoration:none;font-weight:700;}
+  a.cta:hover{text-decoration:underline;}
+  .fine{font-size:15px;color:var(--muted);}
+
+  ul.plain{list-style:none;margin:0 0 22px;}
+  ul.plain li{margin-bottom:14px;}
+  ol.plain{margin:0 0 22px 22px;}
+  ol.plain li{margin-bottom:14px;}
+  ol.plain li::marker{font-weight:700;}
+
+  .field{
+    display:block;width:100%;max-width:340px;
+    font-family:Georgia,'Times New Roman',Times,serif;font-size:16px;
+    padding:9px 12px;border:1px solid #c9c6bf;border-radius:4px;
+    margin:0 0 14px;background:#fff;color:var(--text);
+  }
+  .field:focus{outline:2px solid var(--text);outline-offset:0;}
+  button.cta-link{
+    background:none;border:none;cursor:pointer;padding:0;
+    font-family:inherit;font-size:19px;font-weight:700;color:var(--text);
+  }
+  button.cta-link:hover{text-decoration:underline;}
+
+  .faq-item{margin-bottom:22px;}
+  .faq-item p{margin-bottom:0;}
+
+  footer{
+    padding:36px 28px 30px;margin-top:72px;
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;
+    font-size:12.5px;color:var(--text);
+    display:flex;gap:22px;flex-wrap:wrap;
+  }
+  footer a{color:var(--text);text-decoration:underline;}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="wordmark" href="#">Qalir</a>
+  <div class="nav-links">
+    <a href="#access">Log in</a>
+    <a href="#access">Request invite</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<section>
+  <p>Qalir is a personal assistant that remembers what matters to you and gets things done.</p>
+  <p>The interface is simple: there is no new interface. It lives on Telegram, which you already use. You just talk to it.</p>
+  <p>It remembers your context, searches the web for fresh answers, connects to apps like your Gmail, and asks before it sends anything on your behalf. When something needs paying, it hands you the payment link - you pay yourself.</p>
+  <p><a class="cta" href="#access">Request invite &rsaquo;</a></p>
+</section>
+
+<section id="features">
+  <h2>What Qalir does</h2>
+  <ul class="plain">
+    <li><strong>Remembers.</strong> Every user gets their own memory. Your preferences, past conversations and ongoing work carry over - no starting from scratch.</li>
+    <li><strong>Connects to your apps.</strong> Link apps like your Gmail. Qalir can read and work in them, and always asks for your yes before sending.</li>
+    <li><strong>Searches the web.</strong> Fresh answers from the internet when it matters, not stale guesses.</li>
+    <li><strong>Hands off payments.</strong> When it's time to pay, you get the merchant or UPI link and pay directly. Money never passes through Qalir.</li>
+    <li><strong>Stays open, yet safe.</strong> Anyone who messages gets a reply, with a limited mode for new users. Your things stay yours alone.</li>
+  </ul>
+</section>
+
+<section id="security">
+  <h2>Privacy and control, by design</h2>
+  <p>Secrets are never typed into chat. Passwords go through a one-time secure link - valid for 15 minutes - into an encrypted vault, and are used only for your work, on your instruction.</p>
+  <p>Everything Qalir does follows one rule: your permission first, then action.</p>
+</section>
+
+<section id="access">
+  <h2>Invite only, for now</h2>
+  <p>Leave your email and you'll hear from us when your invite is ready. Once you're invited, log in here and you'll be sent straight to the Qalir bot on Telegram, already recognized.</p>
+  <form action="#" method="get">
+    <input class="field" type="email" name="email" placeholder="you@example.com" required>
+    <button class="cta-link" type="submit">Request invite &rsaquo;</button>
+  </form>
+  <p style="margin-top:22px;">Already invited? <a class="cta" href="#">Log in &rsaquo;</a></p>
+  <p class="fine">Login opens soon for invited users.</p>
+</section>
+
+<section id="how">
+  <h2>Get started in three steps</h2>
+  <ol class="plain">
+    <li><strong>Request your invite.</strong> Drop your email above. Invites go out personally.</li>
+    <li><strong>Log in.</strong> Sign in on this site with your invited email - quick and passwordless.</li>
+    <li><strong>Continue to Telegram.</strong> You'll land in the Qalir bot, already recognized. Start talking - that's it.</li>
+  </ol>
+</section>
+
+<section id="faq">
+  <h2>Frequently asked questions</h2>
+  <div class="faq-item">
+    <p><strong>What is Qalir?</strong></p>
+    <p>A personal AI assistant that runs on Telegram. It remembers your context, searches the web, connects to your apps, and gets tasks done for you.</p>
+  </div>
+  <div class="faq-item">
+    <p><strong>Who built Qalir?</strong></p>
+    <p>Qalir is built by Vikash Singh.</p>
+  </div>
+  <div class="faq-item">
+    <p><strong>Do I need to install an app?</strong></p>
+    <p>No. Qalir works on Telegram, which you likely already have. There is no new app, and no signup beyond the invite login on this page.</p>
+  </div>
+  <div class="faq-item">
+    <p><strong>How do I get access?</strong></p>
+    <p>Qalir is invite-only right now. Request an invite with your email; once approved, log in on this page and you'll be redirected to the Telegram bot, already linked to your account.</p>
+  </div>
+  <div class="faq-item">
+    <p><strong>Are my passwords and data safe?</strong></p>
+    <p>Secrets are never shared in chat - only through one-time secure links that expire in 15 minutes, into an encrypted vault. Qalir always asks before sending anything on your behalf.</p>
+  </div>
+  <div class="faq-item">
+    <p><strong>Does Qalir make payments for me?</strong></p>
+    <p>No. When something needs paying, Qalir hands you the merchant or UPI link and you pay directly. Money never passes through Qalir.</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <span>Copyright &copy; 2026 Qalir</span>
+  <a href="#access">Request invite</a>
+  <a href="https://t.me/QalirAI_bot" target="_blank" rel="noopener">Telegram</a>
+</footer>
+
+</body>
+</html>
